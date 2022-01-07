@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dec" class="com.technoelevate.springassignment.Decaan">
+
+</bean>
+   <bean id="air" class="com.technoelevate.springassignment.Airport">
+   <constructor-arg ref="dec"></constructor-arg>
+   <constructor-arg value="KemppeGowda internaltional airport"></constructor-arg>
+   
+   <property name="noOfFlights" value="1"></property>
+   <property name="terminals" value="Domestic terminal no 24"></property>
+   
+   </bean>
+  
+    
+
+</beans>

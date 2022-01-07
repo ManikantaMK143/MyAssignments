@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.te.springs.autowire.Laptop" autowire="no"></bean>
+
+	<bean id="b" class="com.te.springs.autowire.Battery"></bean>
+	<bean id="s" class="com.te.springs.autowire.Screen"></bean>
+	<bean id="hardDisk" class="com.te.springs.autowire.HardDisk">
+	<property name="name" value="SunDisk"></property>
+	</bean>
+	<bean id="hd1" class="com.te.springs.autowire.HardDisk">
+	<property name="name" value="Sony"></property>
+	</bean>
+	
+
+</beans>
